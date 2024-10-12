@@ -1,0 +1,23 @@
+iText 7 is a popular library for creating and manipulating PDF documents in Java. To use iText 7, you'll typically need several JAR files that contain the core library and
+additional functionality. Here’s a brief overview of the main JAR files and their purposes:
+
+
+itext7-core-x.x.x.jar: This is the main library for PDF creation and manipulation.
+
+itext7-io-x.x.x.jar: Contains I/O operations for reading and writing PDFs.
+
+itext7-forms-x.x.x.jar: Supports the creation and manipulation of PDF forms.
+
+itext7-svg-x.x.x.jar: Enables SVG (Scalable Vector Graphics) support in PDFs.
+
+itext7-annotations-x.x.x.jar: Provides functionality for PDF annotations.
+
+itext7-layout-x.x.x.jar: Contains layout functionalities for complex document structures.
+
+itext7-kernel-x.x.x.jar: Core functionalities of the iText library, including document structure and PDF syntax.
+
+itext7-signatures-x.x.x.jar: Supports digital signatures in PDF documents.
+
+itext7-xmlworker-x.x.x.jar: For converting HTML and XML to PDF.
+
+itext7-samples-x.x.x.jar: Contains example applications demonstrating how to use iText 7 features.
