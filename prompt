@@ -1,0 +1,56 @@
+In JavaScript, `prompt` is a built-in function that displays a dialog box prompting the user to enter some input. It is often used to gather information from users in a simple and straightforward manner. The `prompt` function pauses the execution of the script until the user provides input and clicks "OK" or cancels the dialog.
+
+### Syntax
+
+```javascript
+let userInput = prompt(message, default);
+```
+
+### Parameters
+
+1. **message** (optional): A string that specifies the message to display in the dialog box, asking the user for input.
+2. **default** (optional): A string that sets the default value in the input field of the dialog box. This is optional.
+
+### Return Value
+
+- The `prompt` function returns the input value as a string if the user clicks "OK". If the user clicks "Cancel", it returns `null`.
+
+### Example
+
+Here's a simple example that uses `prompt` to ask the user for their name:
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Example</title>
+</head>
+<body>
+    <script>
+        // Prompt the user for their name
+        let name = prompt("What is your name?", "John Doe");
+        
+        // Check if the user clicked "Cancel"
+        if (name !== null) {
+            alert("Hello, " + name + "!");
+        } else {
+            alert("User cancelled the prompt.");
+        }
+    </script>
+</body>
+</html>
+```
+
+### Points to Note
+
+1. **Blocking**: The `prompt` function is synchronous, meaning it blocks the execution of code until the user provides input or cancels the dialog.
+2. **Browser Compatibility**: While `prompt` is widely supported across browsers, it may not provide a consistent user experience, especially in modern web applications. Users often prefer more customized forms or modal dialogs.
+3. **Input Type**: The input collected from `prompt` is always returned as a string. You may need to convert it to the appropriate type (e.g., number) for further processing.
+
+### Summary
+
+The `prompt` function is a quick way to collect user input in JavaScript. However, for more complex applications, it’s often better to use HTML forms or custom modal dialogs for better user experience and more control over the input process.
+
+If you have more questions about `prompt` or other input methods in JavaScript, feel free to ask!
