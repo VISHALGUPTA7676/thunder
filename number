@@ -1,0 +1,88 @@
+In JavaScript, the `Number` object is a built-in object that provides various properties and methods for working with numerical values. It represents both integer and floating-point numbers.
+
+### Number Properties
+
+1. **`Number.MAX_VALUE`**: The largest positive finite value representable in JavaScript.
+2. **`Number.MIN_VALUE`**: The smallest positive non-zero value representable in JavaScript.
+3. **`Number.NEGATIVE_INFINITY`**: A property representing the negative infinity value.
+4. **`Number.POSITIVE_INFINITY`**: A property representing the positive infinity value.
+5. **`Number.NaN`**: A special value representing "Not-a-Number," which results from invalid number operations.
+
+### Number Methods
+
+JavaScript provides several methods to work with the `Number` object. Here are the key methods:
+
+1. **`Number.isNaN(value)`**
+   - **Description**: Determines whether the value is `NaN` (Not-a-Number).
+   - **Example**:
+     ```javascript
+     console.log(Number.isNaN(NaN)); // true
+     console.log(Number.isNaN("text")); // false
+     ```
+
+2. **`Number.isFinite(value)`**
+   - **Description**: Determines whether the value is a finite number.
+   - **Example**:
+     ```javascript
+     console.log(Number.isFinite(123)); // true
+     console.log(Number.isFinite(Infinity)); // false
+     console.log(Number.isFinite(NaN)); // false
+     ```
+
+3. **`Number.isInteger(value)`**
+   - **Description**: Determines whether the value is an integer.
+   - **Example**:
+     ```javascript
+     console.log(Number.isInteger(4)); // true
+     console.log(Number.isInteger(4.1)); // false
+     ```
+
+4. **`Number.parseFloat(string)`**
+   - **Description**: Parses a string and returns a floating-point number.
+   - **Example**:
+     ```javascript
+     console.log(Number.parseFloat("3.14")); // 3.14
+     console.log(Number.parseFloat("3.14abc")); // 3.14
+     ```
+
+5. **`Number.parseInt(string, radix)`**
+   - **Description**: Parses a string and returns an integer. The second parameter (radix) specifies the base of the numeral system.
+   - **Example**:
+     ```javascript
+     console.log(Number.parseInt("10")); // 10
+     console.log(Number.parseInt("10.5")); // 10
+     console.log(Number.parseInt("10.5", 10)); // 10
+     console.log(Number.parseInt("0x10")); // 16 (hexadecimal)
+     ```
+
+6. **`Number.toFixed(digits)`**
+   - **Description**: Formats a number using fixed-point notation, rounding to a specified number of digits after the decimal point.
+   - **Example**:
+     ```javascript
+     const num = 2.34567;
+     console.log(num.toFixed(2)); // "2.35"
+     console.log(num.toFixed(4)); // "2.3457"
+     ```
+
+7. **`Number.toExponential(digits)`**
+   - **Description**: Returns a string representing the number in exponential notation.
+   - **Example**:
+     ```javascript
+     const num = 123456;
+     console.log(num.toExponential(2)); // "1.23e+5"
+     ```
+
+8. **`Number.toString(radix)`**
+   - **Description**: Returns a string representing the number in a specified base (radix).
+   - **Example**:
+     ```javascript
+     const num = 255;
+     console.log(num.toString(2)); // "11111111" (binary)
+     console.log(num.toString(16)); // "ff" (hexadecimal)
+     ```
+
+### Summary
+
+The `Number` object in JavaScript provides various methods and properties for manipulating and validating numerical data. Understanding these methods helps with tasks such as parsing numbers from strings, checking for special values (like `NaN`), and formatting numbers for display.
+
+If you have specific questions or need examples for particular methods, feel free to ask!
