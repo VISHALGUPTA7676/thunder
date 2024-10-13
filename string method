@@ -1,0 +1,154 @@
+In JavaScript, the `String` object provides a variety of methods for manipulating and working with strings. Here’s a detailed overview of the most commonly used string methods, along with examples for each.
+
+### Common String Methods
+
+1. **`String.length`**
+   - **Description**: Returns the length of the string.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world!";
+     console.log(str.length); // Outputs: 13
+     ```
+
+2. **`String.charAt(index)`**
+   - **Description**: Returns the character at the specified index.
+   - **Example**:
+     ```javascript
+     const str = "Hello";
+     console.log(str.charAt(1)); // Outputs: "e"
+     ```
+
+3. **`String.charCodeAt(index)`**
+   - **Description**: Returns the Unicode of the character at the specified index.
+   - **Example**:
+     ```javascript
+     const str = "A";
+     console.log(str.charCodeAt(0)); // Outputs: 65
+     ```
+
+4. **`String.indexOf(searchValue, fromIndex)`**
+   - **Description**: Returns the index of the first occurrence of a specified value, or `-1` if not found.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world!";
+     console.log(str.indexOf("world")); // Outputs: 7
+     ```
+
+5. **`String.lastIndexOf(searchValue, fromIndex)`**
+   - **Description**: Returns the index of the last occurrence of a specified value.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world! Hello again!";
+     console.log(str.lastIndexOf("Hello")); // Outputs: 19
+     ```
+
+6. **`String.slice(start, end)`**
+   - **Description**: Extracts a section of a string and returns it as a new string.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world!";
+     console.log(str.slice(0, 5)); // Outputs: "Hello"
+     ```
+
+7. **`String.substring(start, end)`**
+   - **Description**: Similar to `slice()`, but does not accept negative indices.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world!";
+     console.log(str.substring(7, 12)); // Outputs: "world"
+     ```
+
+8. **`String.substr(start, length)`**
+   - **Description**: Returns a portion of the string starting from a specified index for a specified length.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world!";
+     console.log(str.substr(7, 5)); // Outputs: "world"
+     ```
+
+9. **`String.replace(searchValue, newValue)`**
+   - **Description**: Replaces the first occurrence of a specified value in a string with a new value.
+   - **Example**:
+     ```javascript
+     const str = "Hello, world!";
+     console.log(str.replace("world", "JavaScript")); // Outputs: "Hello, JavaScript!"
+     ```
+
+10. **`String.replaceAll(searchValue, newValue)`**
+    - **Description**: Replaces all occurrences of a specified value in a string with a new value.
+    - **Example**:
+      ```javascript
+      const str = "Hello, world! Hello again!";
+      console.log(str.replaceAll("Hello", "Hi")); // Outputs: "Hi, world! Hi again!"
+      ```
+
+11. **`String.toUpperCase()`**
+    - **Description**: Returns the string converted to uppercase.
+    - **Example**:
+      ```javascript
+      const str = "Hello";
+      console.log(str.toUpperCase()); // Outputs: "HELLO"
+      ```
+
+12. **`String.toLowerCase()`**
+    - **Description**: Returns the string converted to lowercase.
+    - **Example**:
+      ```javascript
+      const str = "Hello";
+      console.log(str.toLowerCase()); // Outputs: "hello"
+      ```
+
+13. **`String.trim()`**
+    - **Description**: Removes whitespace from both ends of the string.
+    - **Example**:
+      ```javascript
+      const str = "   Hello, world!   ";
+      console.log(str.trim()); // Outputs: "Hello, world!"
+      ```
+
+14. **`String.split(separator, limit)`**
+    - **Description**: Splits the string into an array of substrings based on a specified separator.
+    - **Example**:
+      ```javascript
+      const str = "Hello, world!";
+      console.log(str.split(", ")); // Outputs: ["Hello", "world!"]
+      ```
+
+15. **`String.concat(...strings)`**
+    - **Description**: Combines two or more strings into one string.
+    - **Example**:
+      ```javascript
+      const str1 = "Hello";
+      const str2 = "world!";
+      console.log(str1.concat(", ", str2)); // Outputs: "Hello, world!"
+      ```
+
+16. **`String.includes(searchValue, fromIndex)`**
+    - **Description**: Determines whether a string contains a specified substring.
+    - **Example**:
+      ```javascript
+      const str = "Hello, world!";
+      console.log(str.includes("world")); // Outputs: true
+      ```
+
+17. **`String.startsWith(searchString, position)`**
+    - **Description**: Determines whether a string begins with a specified substring.
+    - **Example**:
+      ```javascript
+      const str = "Hello, world!";
+      console.log(str.startsWith("Hello")); // Outputs: true
+      ```
+
+18. **`String.endsWith(searchString, length)`**
+    - **Description**: Determines whether a string ends with a specified substring.
+    - **Example**:
+      ```javascript
+      const str = "Hello, world!";
+      console.log(str.endsWith("world!")); // Outputs: true
+      ```
+
+### Summary
+
+These string methods provide a powerful toolkit for manipulating and working with strings in JavaScript. By utilizing these methods, you can easily perform various operations such as searching, replacing, and formatting strings.
+
+If you have more questions about specific methods or need further examples, feel free to ask!
