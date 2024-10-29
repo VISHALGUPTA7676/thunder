@@ -1,0 +1,19 @@
+To uninstall Angular CLI, you can use the following command in your terminal or command prompt:
+
+```bash
+npm uninstall -g @angular/cli
+```
+
+This command removes Angular CLI from your global npm packages.
+
+### Verify Uninstallation
+
+To confirm that Angular CLI has been removed, you can run:
+
+```bash
+ng version
+```
+
+If Angular CLI is uninstalled successfully, you should see a message indicating that the command is not found or that the CLI is not installed.
+
+If you have any further questions, feel free to ask!
