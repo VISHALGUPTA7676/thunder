@@ -1,0 +1,43 @@
+To install Angular CLI for Angular 12, you'll need to follow these steps:
+
+1. **Install Node.js**: Ensure you have Node.js installed on your machine. Angular CLI requires Node.js version 12.0 or later. You can download it from [nodejs.org](https://nodejs.org/).
+
+2. **Install Angular CLI**: Open your terminal or command prompt and run the following command:
+
+   ```bash
+   npm install -g @angular/cli@12
+   ```
+
+   This command installs Angular CLI globally on your system.
+
+3. **Verify Installation**: After the installation completes, verify that Angular CLI is installed correctly by running:
+
+   ```bash
+   ng version
+   ```
+
+   This command should display the version of Angular CLI and other related packages.
+
+4. **Create a New Angular Project**: To create a new Angular project using Angular 12, run:
+
+   ```bash
+   ng new my-angular-app --version=12
+   ```
+
+   Replace `my-angular-app` with your desired project name.
+
+5. **Navigate to Your Project Directory**:
+
+   ```bash
+   cd my-angular-app
+   ```
+
+6. **Serve the Application**: Start the development server with:
+
+   ```bash
+   ng serve
+   ```
+
+   You can then open your browser and navigate to `http://localhost:4200` to see your Angular app in action.
+
+That's it! You now have Angular CLI installed and a new Angular 12 project set up. If you have any questions or run into issues, feel free to ask!
